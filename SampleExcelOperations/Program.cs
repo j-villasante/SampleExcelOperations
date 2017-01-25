@@ -13,7 +13,7 @@ namespace SampleExcelOperations
             BookEditor editor = new BookEditor();
             editor.open(@"C:\Users\josue\Documents\Visual Studio 2015\Projects\SampleExcelOperations\nameTest.xlsx");
             editor.removeName("test2");
-            editor.changeRangeName("A4:B10", "test2", "Hoja1");
+            editor.addRangeName("A4:B10", "test2", "Hoja1");
             editor.close();
         }
     }

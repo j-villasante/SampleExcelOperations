@@ -25,6 +25,12 @@ namespace SampleExcelOperations
             this.book = this.toDictionary(xlWorkbook);
         }
 
+        public void setWorkbook(Excel.Workbook workbook)
+        {
+            xlWorkbook = workbook;
+            this.book = this.toDictionary(workbook);
+        }
+
         public void close()
         {
             xlWorkbook.Save();

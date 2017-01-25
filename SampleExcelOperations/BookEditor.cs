@@ -14,7 +14,7 @@ namespace SampleExcelOperations
             xlWorkbook.Names.Item(name).Delete();
         }
 
-        public void changeRangeName(string range, string rangeName, string sheetName)
+        public void addRangeName(string range, string rangeName, string sheetName)
         {
             Excel.Range excelRange = this.getRange(sheetName, range);
             xlWorkbook.Names.Add(rangeName, excelRange);
